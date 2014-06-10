@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title>AngularJS Perf Demo</title>
+  <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+  <h1>Angular Task</h1>
+  <div ng-controller="MainCtrl">
+    <div ng-repeat="taskList in taskLists" class="tasklist" style="display:inline-block;width:300px;margin:5px 0px">
+      <div ng-repeat="task in taskList">
+        <span task="task"></span>
+      </div>
+    </div>
+  </div>
+
+  <!--LIBS-->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/lodash/dist/lodash.min.js"></script>
+
+  <!--APP CONTENT-->
+  <script src="js/app.js"></script>
+  <script src="js/MainCtrl.js"></script>
+  <script src="task/task.js"></script>
+  <!--<script src="js/app.js"></script>-->
+
+</body>
+</html>

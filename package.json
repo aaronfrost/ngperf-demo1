@@ -1,0 +1,11 @@
+{
+  "name": "AngularJS-Perf1",
+  "version": "0.0.0",
+  "description": "This is a perf demo app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aaronfrost@gmail.com",
+  "license": "MIT"
+}

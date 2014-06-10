@@ -1,0 +1,12 @@
+.popout{
+  display: none;
+}
+
+.person:hover .popout{
+  display: block;
+  position: absolute;
+  padding: 20px;
+  background: lightblue;
+  z-index: 10;
+  width:250px;
+}

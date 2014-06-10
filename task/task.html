@@ -1,0 +1,17 @@
+<div class="task" style="border: 1px solid gray;margin:5px;border-radius:3px;padding:5px;">
+  <div>
+    <div><strong>Description:</strong></div>
+    <div>{{task.desc}}</div>
+  </div>
+  <div>
+    <div><strong>Assigned To:</strong></div>
+    <div>
+      <span ng-repeat="person in task.assignees" style="position:relative;" class="person">
+        <img ng-src="{{person.user.picture}}" alt="" style="width:30px;height:30px;"/>
+        <div class="popout">
+          <div><strong>Title: </strong> <span>{{person.user.name.first}} {{person.user.name.last}}</span></div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
