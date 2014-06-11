@@ -10,4 +10,15 @@ angular.module('app').controller('MainCtrl', function($scope, $http){
     });
   }
 
+  var lastMoveTime;
+  $scope.onMouseMove = function onMouseMove($event){
+    var thisMoveTime = new Date().getTime();
+    if(_.isUndefined(lastMoveTime)){
+      lastMoveTime = thisMoveTime;
+      return;
+    }
+    console.log("Duration", (thisMoveTime - lastMoveTime));
+    lastMoveTime = thisMoveTime;
+  };
+
 });

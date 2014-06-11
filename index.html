@@ -8,7 +8,7 @@
   <h1>Angular Task</h1>
   <div ng-controller="MainCtrl">
     <div ng-repeat="taskList in taskLists" class="tasklist" style="display:inline-block;width:300px;margin:5px 0px; border-left:1px solid green; border-right:1px solid green;">
-      <div ng-repeat="task in taskList">
+      <div ng-repeat="task in taskList" ng-mouseover="onMouseMove($event)">
         <span task="task"></span>
       </div>
     </div>

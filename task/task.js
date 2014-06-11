@@ -7,7 +7,7 @@ angular.module('app').directive('task', function() {
       task: '='
     },
     link: function(scope, elem, attrs) {
-      console.log(scope.task);
+
     }
   };
 });
